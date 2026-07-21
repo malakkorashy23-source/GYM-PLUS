@@ -1,0 +1,489 @@
+/* 350 */
+
+@media (max-width: 1300px) {
+    /*------------- navbare --------------*/
+
+    nav .container{
+        width: 85%;
+        align-items: center;
+    }
+    nav .container .burger{
+       display: flex;/*affected on span*/
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+        width: 50px;
+        height: 40px;
+        background-color: transparent;
+        border: 3px solid #fff;
+        border-radius: 10px;
+    }
+
+    nav .container .burger span{
+        display: block; /*give the span width and height*/
+        width: 60%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    nav .container .cont{
+        position: absolute;/*moving in relation to nav*/
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50%,100%);
+        width: 80%;
+        z-index: 1000;
+    }
+    nav .container .cont ul{
+        background-color:#000;
+        flex-direction: column;/*affect of li items*/
+        justify-content: center;
+        row-gap: 15px;
+        height: 0px;
+        border-radius: 10px;
+        transition-duration: 1s;
+        overflow: hidden;
+    }
+    nav .container #menu:checked~.cont ul{
+        height:310px;
+        padding-block: 15px;
+         
+    }
+    nav .container ul li{
+        margin: auto;
+    }
+
+    /* -- --------ABOUT bage---------- -- */
+    
+    #ABOUT .container{
+        flex-direction: column;
+    }
+    #ABOUT .container .content{
+        width: 100%;
+        top: 50px;
+        left: 20px;
+    }
+    #ABOUT .container .img{
+        width: 100%;
+    }
+    #ABOUT .container .img img{
+        width: 280px;
+        height: 300px;
+        margin-top: 70px;
+    }
+    
+    /* -- -------- SERVICES bage---------- -- */
+
+    #SERVICES .container .box{
+        flex-direction: column;
+    }
+    #SERVICES .container .box .icon{
+        order: 1;/*first always*/
+        margin-bottom: 20px;
+    }
+    #SERVICES .container .box .content{
+        order: 2;/*seconed always*/
+        width: 100%;
+    }
+     
+    /* -- -------- CLIENTS bage---------- -- */
+
+    #CLIENTS .container{
+        flex-direction: column;
+    }
+    #CLIENTS .container .box{
+        width: 100%;
+    }
+
+    /*-- -------- TRAINERS bage---------- -- */
+
+    #TRAINERS .container{
+        flex-direction: column;
+        column-gap: 0px;
+        row-gap: 20px;
+    }
+    #TRAINERS .container .card{
+        width:100%;
+         
+    }
+    #TRAINERS .container .card .item{
+        margin: auto;
+    }
+
+    /*-- -------- GALLERY bage---------- -- */
+
+    #GALLERY .container .card{
+        margin: auto;
+        width: 90%;
+        height: 400vh;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(7,auto);  
+    }
+    #GALLERY .container .card .img:nth-of-type(1){
+        grid-row: 1/2;
+    }
+    #GALLERY .container .card .img:nth-of-type(4){
+        grid-row: 2/3;
+    }
+
+    /* -- -------- CONTACT bage---------- - */
+
+    #CONTACT .container .links{
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    #CONTACT .container form{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 10px;
+    }
+     #CONTACT .container form .box{
+        width: 100%;
+    }
+    #CONTACT .container form button{
+        width: 100%;
+    }
+
+    /* - -------- footer bage----------  */
+
+    footer .container{
+        flex-direction: column;
+        white-space: nowrap;
+    }
+    footer .container .card{
+        width: 100%;
+        margin-left:0px;
+    }
+    footer .container .card .content.imgs{
+        width: 80%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(9,auto);
+        row-gap: 7px;
+        justify-content: center;
+        margin: auto;
+    }
+    footer .container .card .content img{
+        width:auto;
+        height: 200px;
+    }
+    footer .container .card .content.card3{
+        margin-bottom: 30px;
+    }
+    footer .container2 p{
+        text-align: center;
+        padding: 0px 40px;
+ 
+    }
+}
+
+
+/* 450 */
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    /* -- --------ABOUT bage---------- -- */
+
+    #ABOUT .container .img img{
+        width: 300px;
+        height: 350px;
+    }
+}
+
+/* 650 */
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    /* -- --------ABOUT bage---------- -- */
+
+    #ABOUT .container .content{
+        top: 30px;
+        left: 30px;
+    }
+    #ABOUT .container .img img{
+        width: 350px;
+        height: 400px;
+    }
+
+    /* -- -------- SERVICES bage---------- -- */
+
+    #SERVICES .container .box .content{ 
+        width: 60%;
+        margin: auto;
+    }
+
+    /* -- -------- CLIENTS bage---------- -- */
+
+    #CLIENTS .container .box{
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    /*-- -------- TRAINERS bage---------- -- */
+
+    #TRAINERS .container .card{
+        width:60%;
+        margin: auto;
+    }
+
+    /*-- -------- GALLERY bage---------- -- */
+
+    #GALLERY .container .card{
+        width: 60%;
+    }
+
+    /* - -------- footer bage----------  */
+
+     
+    footer .container .card .content.imgs{
+       
+        display: grid;
+        grid-template-columns:repeat(3,auto);
+        grid-template-rows: repeat(3,auto);
+        row-gap: 7px;
+        justify-content:normal;
+        margin: 0px;
+    }
+    footer .container .card .content img{
+        width:auto;
+        height:100px ;
+    }
+    footer .container .card .content.card3{
+        width: 70%;
+    }
+
+}
+
+/* 850 */
+
+@media (min-width: 769px) and (max-width: 1300px) {
+
+    /* -- --------ABOUT bage---------- -- */
+    
+    #ABOUT .container{
+        flex-direction:row;/*returne to defult*/
+    }
+    #ABOUT .container .content{
+        width: 50%;
+        top: 100px;
+        left: 70px;
+    }
+    #ABOUT .container .img{
+        width: 50%;
+    }
+    #ABOUT .container .img img{
+        width: 300px;
+        height: 350px;
+        margin-top: 50px;
+    }
+
+    /* -- -------- SERVICES bage---------- -- */
+
+    #SERVICES .container .box{
+        flex-direction: row;/*return to defult*/
+    }
+    #SERVICES .container .box .icon{
+        order:initial;/*normal*/
+        margin-bottom:0px;
+        margin: auto;/*override*/
+    }
+    #SERVICES .container .box .content{
+        order: initial;/*normal*/
+        width: 70%;
+    }
+
+    /* -- -------- CLIENTS bage---------- -- */
+
+    #CLIENTS .container{
+        flex-direction: row;/*return to defult*/
+    }
+    #CLIENTS .container .box{
+        width: 50%;
+    }
+
+    /*-- -------- TRAINERS bage---------- -- */
+
+    #TRAINERS .container{
+        flex-direction:row;
+        
+    }
+    #TRAINERS .container .card{
+        width:50%;
+         
+    }
+    #TRAINERS .container .card .item{
+        margin: 10px;
+    }
+
+     /*-- -------- GALLERY bage---------- -- */
+
+    #GALLERY .container .card{ /*return to defult*/
+        width: 90%;
+        height: 100vh;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows:repeat(3,1fr);
+    }
+    #GALLERY .container .card .img:nth-of-type(1){
+        grid-row: 1/3;
+    }
+    #GALLERY .container .card .img:nth-of-type(4){
+        grid-row: 2/4;
+    }
+
+    /* -- -------- CONTACT bage---------- - */
+
+    #CONTACT .container .links{/*return to defult*/
+        flex-direction: row;
+        justify-content: space-evenly;
+        row-gap:0px;
+    }
+    #CONTACT .container form{
+        flex-direction:row;
+        justify-content: space-between;
+        align-items:normal;
+        row-gap:0px;
+    }
+     #CONTACT .container form .box{
+        width: 32%;
+    }
+    #CONTACT .container form button{
+        width: initial;
+    }
+
+    /* - -------- footer bage----------  */
+     
+    footer .container .card .content.imgs{
+        width: 70%;
+    }
+
+}
+
+/* 1050 */
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    /*------------- navbare --------------*/
+
+    nav .container .burger{ /*return to defult*/
+        display: none;
+    }
+
+    nav .container .cont{
+        background-color: transparent;
+        left: 45%;
+        bottom: 10px;
+        transform: translate(0%,0%);
+        width: 50%;
+    }
+    
+    nav .container .cont ul{
+        background-color: transparent;
+        width: initial;
+        height: initial;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+    
+    /* -- -------- CLIENTS bage---------- -- */
+
+    #CLIENTS .container .box{
+        width: 40%;/*normal*/
+    }
+
+    /*-- -------- TRAINERS bage---------- -- */
+
+    #TRAINERS .container .card{ /*return to defult*/
+        width:25%;
+    }
+    #TRAINERS .container .card .item{
+        margin: 0px;/*0verride*/
+        margin-right: 20px;/*normal*/
+    }
+
+    /* - -------- footer bage----------  */
+
+    footer .container{/*return to defult*/
+        flex-direction:row;
+        white-space:wrap;
+    }
+    footer .container .card{
+        width: 30%;
+        margin-left:0px;
+    }
+    footer .container .card .content.imgs{
+        width: 270px;
+        display: grid;
+        row-gap: 7px;
+        margin:0px;
+    }
+    footer .container .card .content img{
+        width:90px;
+        height:70px;
+    }
+    footer .container .card .content.card3{
+        width: 100%;
+        margin-bottom:0px;
+    }
+}
+
+/* 1250 */
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+
+    /* -- --------ABOUT bage---------- -- */
+    
+    #ABOUT .container{
+        width: 80%;
+        margin: auto;
+    }
+
+    /* -- -------- SERVICES bage---------- -- */
+
+    #SERVICES .container{
+        width: 80%;
+        margin: auto;
+    }
+
+    /* -- --------CLIENTS  bage---------- -- */
+
+    #CLIENTS .container{
+        width: 80%;
+        margin: auto;
+    }
+
+    /* -- -------- TRAINERS  bage---------- -- */
+
+    #TRAINERS .container{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    /* -- --------  GALLERY  bage---------- -- */
+
+    #GALLERY .container{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    #GALLERY .container .card{
+        height: 70vh;
+    }
+
+    /* -- --------   CONTACT  bage---------- -- */
+
+    #CONTACT .container{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    /* -- --------    footer  bage---------- -- */
+
+    footer .container{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+}
