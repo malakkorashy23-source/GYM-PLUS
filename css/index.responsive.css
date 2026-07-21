@@ -373,7 +373,8 @@
         left: 45%;
         bottom: 10px;
         transform: translate(0%,0%);
-        width: 50%;
+        width: 55%;
+        padding-right:20px;
     }
     
     nav .container .cont ul{
