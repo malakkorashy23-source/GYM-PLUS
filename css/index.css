@@ -28,6 +28,7 @@ nav .container ul{
 nav .container ul li{
     padding-bottom: 3px;
     transition-duration: .5s;
+    border-bottom:2px solid transparent ;
 }
 nav .container ul li a{
     text-decoration: none;
